@@ -1,0 +1,16 @@
+{
+    "name": "github-flatui",
+    "version": "1",
+    "manifest_version": 2,
+    "description": "make github flatui",
+
+    "content_scripts": [{
+        "matches": ["http://*.github.com/*", "https://*.github.com/*"],
+        "css": ["github_flatui.css"]
+    }],
+    "permissions": [
+        "tabs",
+        "https://*/*",
+        "http://*/"
+    ]
+}
